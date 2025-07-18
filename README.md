@@ -31,7 +31,7 @@ Real-time event broadcasting.</p>
 <p>Laravel is accessible, powerful, and provides tools required for large, robust applications</p>
 
 <h2 style="color:red">Laravel 10 Requirements</h2>
-<p>PHP >= 8.1 </p>
+<p>PHP >= 8.2 </p>
 <p>BCMath PHP Extension Ctype PHP Extension Fileinfo PHP extension JSON PHP Extension Mbstring PHP Extension OpenSSL PHP Extension PDO PHP Extension Tokenizer PHP Extension XML PHP Extension.
 
 This software is used by product details and display.This software is user for <span style="color : green">ContactPoint 360</span>  Machine Test Purpose Make Sure you have Xampp,Largon or Wams Server if using windows OS and LAMS if using Linux Make Sure Above PHP 8.2 </p>
@@ -39,7 +39,7 @@ This software is used by product details and display.This software is user for <
  <h2> Installation & Setup</h2>
 
   <h3>Step 1: Clone the Repository</h3>
-  <pre><code>git clone https://github.com/hashimpk07/contactpoint360.git
+  <pre><code>git clone [https://github.com/hashimpk07/contactPoint360.git
 cd contactpoint360</code></pre>
 
   <h3>Step 2: Create the .env File</h3>
