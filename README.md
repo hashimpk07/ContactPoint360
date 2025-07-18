@@ -58,7 +58,7 @@ DB_PASSWORD=</code></pre>
 
   <h3>Step 5: Verify <code>vendor/</code> Directory</h3>
   <p>If not available, run:</p>
-  <pre><code>composer install</code></pre>
+  <pre><code>composer update</code></pre>
 
   <h2> Project Initialization</h2>
 
