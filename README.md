@@ -30,7 +30,7 @@ Robust background job processing.
 Real-time event broadcasting.</p>
 <p>Laravel is accessible, powerful, and provides tools required for large, robust applications</p>
 
-<h2 style="color:red">Laravel 10 Requirements</h2>
+<h2 style="color:red">Laravel 12 Requirements</h2>
 <p>PHP >= 8.2 </p>
 <p>BCMath PHP Extension Ctype PHP Extension Fileinfo PHP extension JSON PHP Extension Mbstring PHP Extension OpenSSL PHP Extension PDO PHP Extension Tokenizer PHP Extension XML PHP Extension.
 
