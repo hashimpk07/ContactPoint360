@@ -1,61 +1,114 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ContactPoint360 - Laravel Project Setup Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-left: 3px solid #3498db;
+      overflow-x: auto;
+    }
+    ul {
+      margin-top: 0;
+    }
+    .checklist li {
+      list-style: '✅ ';
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <h1>🚀 ContactPoint360 - Laravel Project Setup Guide</h1>
 
-## About Laravel
+  <h2>🛠️ Installation & Setup</h2>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  <h3>Step 1: Clone the Repository</h3>
+  <pre><code>git clone https://github.com/hashimpk07/contactpoint360.git
+cd contactpoint360</code></pre>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <h3>Step 2: Create the .env File</h3>
+  <pre><code>cp .env.example .env</code></pre>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  <h3>Step 3: Configure Database in .env</h3>
+  <pre><code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=contact360
+DB_USERNAME=root
+DB_PASSWORD=</code></pre>
 
-## Learning Laravel
+  <h3>Step 4: Install Composer Dependencies</h3>
+  <pre><code>composer update</code></pre>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+  <h3>Step 5: Verify <code>vendor/</code> Directory</h3>
+  <p>If not available, run:</p>
+  <pre><code>composer install</code></pre>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+  <h2>⚙️ Project Initialization</h2>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+  <h3>Step 6: Run Migrations</h3>
+  <pre><code>php artisan migrate</code></pre>
 
-## Laravel Sponsors
+  <h3>Step 7: Serve the Application</h3>
+  <pre><code>php artisan serve</code></pre>
+  <p>Open in browser: <code>http://127.0.0.1:8000</code></p>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+  <h2>👤 User Access</h2>
 
-### Premium Partners
+  <h3>Step 8: Register & Login</h3>
+  <p>Create a new user and log in to the dashboard.</p>
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+  <h2>📬 Mail & Queue Setup</h2>
 
-## Contributing
+  <h3>Step 9: Mail Configuration</h3>
+  <pre><code>MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=your_username
+MAIL_PASSWORD=your_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=admin@example.com
+MAIL_FROM_NAME="ContactPoint360"</code></pre>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+  <h3>Step 10: Enable Queues</h3>
+  <pre><code>QUEUE_CONNECTION=database</code></pre>
+  <pre><code>php artisan queue:work</code></pre>
 
-## Code of Conduct
+  <h2>🔗 Access URLs</h2>
+  <ul>
+    <li><strong>Admin Login:</strong> <a href="http://127.0.0.1:8000/login">http://127.0.0.1:8000/login</a></li>
+    <li><strong>User Form:</strong> <a href="http://127.0.0.1:8000/user">http://127.0.0.1:8000/user</a></li>
+  </ul>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+  <h2>✅ Final Checklist</h2>
+  <ul class="checklist">
+    <li>.env file created and configured</li>
+    <li>Database created and connected</li>
+    <li>Composer dependencies installed</li>
+    <li>Migrations run</li>
+    <li>Mail and queue configured</li>
+    <li>Laravel server running</li>
+    <li>Queue worker running</li>
+  </ul>
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</body>
+</html>
